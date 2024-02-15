@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "1b3806d2-0887-49a0-8476-1b26189a4c27",
+		"name": "Turnover",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32928609"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/turnover/line_chart/?init_date=2022-01-01&end_date=2022-01-30",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/turnover/line_chart/?init_date=2022-01-01&end_date=2022-01-30",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"turnover",
+						"line_chart",
+						""
+					],
+					"query": [
+						{
+							"key": "init_date",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-01-30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/turnover/category_charts/?init_date=2022-01-01&end_date=2022-01-30&category=Vendas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/turnover/category_charts/?init_date=2022-01-01&end_date=2022-01-30&category=Vendas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"turnover",
+						"category_charts",
+						""
+					],
+					"query": [
+						{
+							"key": "init_date",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-01-30"
+						},
+						{
+							"key": "category",
+							"value": "Vendas"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

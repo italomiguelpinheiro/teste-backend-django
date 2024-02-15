@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "f002d480-4a3e-4523-a9e0-717d976b2a5d",
+		"name": "Headcount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32928609"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/headcount/line_chart/?init_date=2022-01-01&end_date=2022-07-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/headcount/line_chart/?init_date=2022-01-01&end_date=2022-07-01",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"headcount",
+						"line_chart",
+						""
+					],
+					"query": [
+						{
+							"key": "init_date",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-07-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/headcount/line_chart/?init_date=2022-01-01&end_date=2022-05-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/headcount/category_charts/?init_date=2022-01-01&end_date=2022-07-01&category=Marketing",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"headcount",
+						"category_charts",
+						""
+					],
+					"query": [
+						{
+							"key": "init_date",
+							"value": "2022-01-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-07-01"
+						},
+						{
+							"key": "category",
+							"value": "Marketing"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
